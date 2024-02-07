@@ -5,7 +5,7 @@
     margin: 0 auto;
 }
 
-/* 顶部导航条strt */
+/* #region 顶部导航条strt */
 .topbar {
     height: 30px;
     background-color: #ECECEC ;
@@ -29,4 +29,37 @@
 .welcome .register {
     padding-left: 10px;
 }
-/* 顶部导航条end */
+
+.topbar-nav .list li {
+    float: left;
+    
+    color: #666;
+}
+.topbar-nav .list li a{
+    font-size: 12px;
+    padding: 0px 15px;
+    border-left: 1px solid #666;
+}
+.topbar-nav .list li .start{
+    padding-left: 0px;
+    border-left: none;
+}
+.topbar-nav .list li .end{
+    padding-right: 0px;
+
+}
+.topbar-nav .list {
+    height: 30px;
+    line-height: 30px;
+}
+/* #endregion 顶部导航条end */
+
+/* 头部部分start */
+
+
+
+
+
+
+
+/* 头部部分end */
