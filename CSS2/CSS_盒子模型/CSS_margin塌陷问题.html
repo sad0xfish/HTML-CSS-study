@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .outer {
+            width: 400px;
+            
+            background-color: olive;
+
+            /* 解决方案一 */
+            /* border: 1px solid; */
+            /* padding: 1px; */
+            /* 解决方案二 */
+            overflow: hidden;
+        }
+        .inner1 {
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            /* margin塌陷 */
+            /* margin: 10px; */
+            margin-top: 30px;
+
+
+            margin-bottom: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .inner2 {
+            width: 100px;
+            height: 100px;
+            background-color: lime;
+            margin-top: 30px;
+        }
+        .inner3 {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            /* 此处的margin又有了塌陷 */
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner1">inner1</div>
+        <div class="inner2">inner2</div>
+        <div class="inner3">inner3</div>
+    </div>
+    <div>7777777777777777777777777</div>
+</body>
+</html>

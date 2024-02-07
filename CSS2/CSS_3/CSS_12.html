@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>动态伪类</title>
+    <style>
+        * {
+            font-size: 40px;
+        }
+        /* 没访问过的颜色 */
+        a:link {
+            color: cornflowerblue;
+        }
+        /* 访问过的颜色 */
+        a:visited {
+            color: antiquewhite;
+        }
+        /* 悬浮在此上的颜色 */
+        a:hover {
+            color: blueviolet;
+        }
+        /* 被激活状态下的配置 */
+        a:active {
+            color: yellowgreen;
+        }
+        /* 写的要求，先写link,visited,hover,hover,active */
+        input:focus {
+            color: black;
+            background-color: bisque;
+
+        }
+    </style>
+</head>
+    <body>
+        <a href="https://www.baidu.com">baidu</a><br>
+        <a href="https://www.jd.com">JD</a>
+
+        <br>
+        <input type="text"><br>
+        <input type="text"><br>
+        <input type="text"><br>
+    </body>
+</html>

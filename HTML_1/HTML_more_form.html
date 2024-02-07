@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>form</title>
+</head>
+<body>
+    <form action="https://www.cn.bing.com/search">
+        <fieldset>
+            <legend>主要信息</legend>
+            <!-- 输入文本 -->
+            <!-- 使用label进行文字与控件的链接 -->
+            <label for="zhanghao">账号</label>
+            <input id="zhanghao" type="text" name="account" value="" maxlength="5" >
+            <br>
+            <!-- 输入密码 -->
+            <label>
+                密码 <input type="password" mane="password" value="" maxlength="6">
+            </label>
+            
+            <br>
+            <!-- 单选框 -->
+            所属单位
+            <label> <input checked type="radio" name="q" value="china">地面站</label>
+    
+            <label> <input type="radio" name="q" value="moon">月球站</label>
+        </fieldset>
+
+        <br>
+        <fieldset>
+            <legend>次要信息</legend>
+            <!-- 复选框 -->
+            任务目标
+            <input checked type="checkbox" name="mubiao" value="safe">队员无伤
+            <input type="checkbox" name="mubiao" value="yuerang">月壤
+            <input type="checkbox" name="mubiao" value="jinbi">金币
+            <input type="checkbox" name="mubiao" value="fangjianbei">方尖碑
+            <br>
+            <!-- 文本域 -->
+            备注 <textarea name="ds"  cols="22" rows="5"></textarea>
+            <br>
+            任务地点：
+            <select name="from" >
+                <option  value="370">山东</option>
+                <option selected value="130">河北</option>
+                <option disabled value="410">河南</option>
+                <option value="140">山西</option>
+            </select>
+        </fieldset>
+
+        <br>
+        <!-- 两种提交按钮实现方法 ,button 默认为submit-->
+        <button type="submit">提交</button>
+        <input type="submit" value="提 交">
+        <br>
+        <!-- 两种重置的实现方法 -->
+        <button type="reset">虫豸</button>
+        <input type="reset" value="重置">
+        <br>
+        <!-- 两种普通按钮的实现方法 -->
+        <button type="button">无效</button>
+        <input type="button"  value="按着玩">
+        <br>
+        <!-- 隐藏域 ,不显示，后端手段-->
+        <input type="hidden" name="aaa" value="75">
+
+    </form>
+</body>
+</html>

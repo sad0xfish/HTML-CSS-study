@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .outer {
+            width: 600px;
+            border: 1px solid;
+            background-color: thistle;
+            /*  第一种解决方案*/
+            /* height: 122px; */
+
+            /* 第二种解决方案 */
+            /* float: left; */
+
+            /* 第三种方案 */
+            /* overflow: scroll; */
+   
+        }
+                   
+        
+        .box {
+            height: 100px;
+            width: 100px;
+            background-color: tan;
+            border: 1px solid;
+            margin: 10px;
+        }
+        .box1,.box2,.box3,.box4
+        {
+            float: left;
+        }
+         /* 第四种方案 */
+        /* .c1 {
+            clear: both;
+        } */
+        /* 第五种方案 */
+        .outer::after {
+            content: "";
+            display: block;
+            clear:  both;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+        <div class="box box4">4</div>
+        <!-- <div class="c1"></div> -->
+    </div>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, minima placeat ipsa sed enim reiciendis cupiditate voluptatum delectus hic assumenda dicta voluptatibus asperiores? Beatae sit corporis unde aliquam aliquid sapiente modi maxime harum. Sit, nam autem quo facere sint odit culpa nihil officiis. Voluptates pariatur dolorem eos veniam deleniti, sequi a iure excepturi perspiciatis molestiae minima enim doloremque tenetur distinctio sed sit, debitis impedit. Vero, blanditiis odio! Sit labore reprehenderit, eum reiciendis ratione veritatis quis aspernatur dolores ad molestiae atque accusamus quos iure nihil quas consequatur amet cumque cupiditate expedita rerum maxime aut optio maiores. Ipsum perspiciatis error hic aliquid.</div>
+</body>
+</html>

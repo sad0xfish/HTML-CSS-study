@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div {
+             width: 200px;
+             height: 200px;
+             background-color: pink;
+             font-size: 60px;
+             /* 左侧的内边距 */
+             /* padding-left: 20px; */
+
+             /* 上侧内边距 */
+             /* padding-top: 30px; */
+
+             /* 右侧内边距 */
+             /* padding-right: 40px; */
+             
+             /* 底边内边距 */
+             /* padding-bottom: 50px; */
+             
+             /* 复合属性的写法,写一个值为四个方向 */
+             /* padding: 20px; */
+
+             /* 复合属性写法，写两个值为上下，左右的值 */
+             /* padding: 10px 20px; */
+
+             /* 复合写法，写三个值为上，左右，下的值 */
+             /* padding: 10px 20px 30px; */
+
+              /* 复合写法，写四个值为上，右，下，左的值，顺时针顺序 */
+              /* padding: 10px 20px 30px 40px; */
+        }
+        span {
+            font-size: 40px;
+            background-color: orangered;
+            
+            padding-left: 30px;
+            padding-right: 40px;
+            /* 行内元素的上下内边距设置后不实际占位 
+                块元素和行内块元素均无问题。
+            */
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div>漂亮的</div>
+    <hr>
+    <span>wow</span>
+</body>
+</html>

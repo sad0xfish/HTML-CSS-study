@@ -1,0 +1,15 @@
+/* 基础设置 */
+
+.container {
+    width: 1190px;
+    margin: 0 auto;
+}
+
+/* 顶部导航条strt */
+.topbar {
+    height: 30px;
+    background-color: #ECECEC ;
+}
+
+
+/* 顶部导航条end */

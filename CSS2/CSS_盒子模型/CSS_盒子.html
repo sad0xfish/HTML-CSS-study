@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        /* 像素点配置大小 */
+        #d1 {
+            height: 300px;
+            width: 300px;
+            font-size: 20px;
+            background-color: darkorange;   
+        }
+        /* 用相对font-size的大小进行配置，若无font-size则按照浏览器自定义大小来 */
+        #d2 {
+            height: 15em;
+            width: 15em;
+            font-size: 1em;
+            background-color: purple;   
+        }
+        /* 使用根目录的大小来（HTML）若没配置，则按浏览器默认来 */
+        #d3 {
+            height: 10rem;
+            width: 10rem;
+            font-size: 20px;
+            background-color: darkorange;   
+        }
+        #d4 {
+            height: 200px;
+            width: 200px;
+            font-size: 20px;
+            background-color: mediumaquamarine;
+        }
+        /* 根据其父元素对来计算长度 */
+        #d5 {
+            height: 50%;
+            width: 50%;
+            background-color: violet;
+        }
+        #d6 {
+            font-size: 60px;
+            text-indent: 4em;
+        }
+    </style>
+</head>
+<body>
+        <div id="d1">1</div>
+        <hr>
+        <div id="d2">1</div>
+        <hr>
+        <div id="d3">1</div>
+        <div id="d4">1
+            <div id="d5"></div>
+        </div>
+        <div id="d6">一样一样一样师教态自然，语调亲切，并不断鼓励学生，充分发挥学生的主体作用。使学生在和谐融洽的课堂氛围中学习，推进了知识的掌握和智力的发展一样以</div>
+</body>
+</html>

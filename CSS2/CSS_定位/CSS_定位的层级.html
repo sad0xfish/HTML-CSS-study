@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .outer {
+            width: 500px;
+            background-color: darkorange;
+            border: 1px solid black;
+            padding: 20px;
+            position: relative;
+        }
+        .box {
+            width: 200px;
+            height: 200px; 
+            font-size: 50px;
+        }
+        .box1{
+            background-color: wheat;
+        }
+        /* 相对定位元素能够置于普通元素上 */
+        
+        .box2 {
+            background-color: rosybrown;
+            position: relative;
+            top: -150px;
+            left: 50px;
+            z-index: 1;
+        }
+        .box3 {
+            background-color: turquoise;
+            position: absolute;
+            left: 120px;
+            top: 120px;
+            z-index: 4;
+        }
+        .box4 {
+            background-color: red;
+            position: fixed;
+            left: 180px;
+            top: 180px;
+            z-index: 10;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+        <div class="box box4">4</div>
+    </div>
+</body>
+</html>

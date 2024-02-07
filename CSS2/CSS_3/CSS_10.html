@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        /* 属性选择器的属性选择,第一种写法 */
+        /* [title] {
+            color: darkgrey;
+        } */
+
+        * {
+            font-size: 99px;
+        }
+        
+        /* 选择具体 属性值 的 */
+        /* [title="0x01"] {
+            color: greenyellow;
+        } */
+
+        /* 选择具体属性，且以0x开头的 */
+        /* [title^="0x"] {
+            color: aqua;
+        } */
+
+        /* 选择具体的属性值，且以1结尾的 */
+        /* [title$="1"] {
+            color: yellowgreen;
+        } */
+        
+        /* 选择具体属性，属性值中有0的 */
+        [title*="0"] {
+            color: fuchsia;
+        }
+    </style>
+</head>
+    <body>
+        <div title="0x01">1</div>
+        <div title="0x02">2</div>
+        <div title="0x03">3</div>
+        <div title="0x04">4</div>
+        <div title="0x05">5</div>
+    </body>
+</html>

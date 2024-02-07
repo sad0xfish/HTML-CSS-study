@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>结构伪类</title>
+    <style>
+        * {
+            font-size: 50px;
+        }
+
+        /*  选中符合要求的第一个元素*/
+        /* div>p:first-child
+        {
+            color: hotpink;
+        } */
+
+        /* 若第一个元素不符合要求，则无法定义风格 */
+        /* div>p:first-child
+        {
+            color: hotpink;
+        } */
+
+        /* 用后代选择器的长子数会多起来 */
+        /* div p:first-child
+        {
+            color: hotpink;
+        }  */
+
+        /* 选中为长子的P */
+        p:first-child
+        {
+            color: hotpink;
+        } 
+
+    </style>
+</head>
+    <body>
+        <!-- 1 -->
+        <!-- <div>
+            <p>88</p>
+            <p>76</p>
+            <p>28</p>
+            <p>46</p>
+        </div> -->
+
+        <!-- 2 -->
+        <!-- <div>
+            <span>88</span>
+            <p>76</p>
+            <p>28</p>
+            <p>46</p>
+        </div> -->
+
+        <!-- 3 -->
+        <div>
+            <P>99</P>
+            <marquee >
+                <p>00</p>
+               <p>88</p> 
+            </marquee>
+            
+            <p>76</p>
+            <p>28</p>
+            <p>46</p>
+        </div>
+
+    </body>
+</html>

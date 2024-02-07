@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .outer {
+            width: 500px;
+            background-color: darkorange;
+            border: 1px solid black;
+            padding: 20px;
+        }
+        .box {
+            width: 200px;
+            height: 200px;
+            font-size: 50px;
+        }
+        .box1{
+            background-color: wheat;
+        }
+        .box2 {
+            background-color: rosybrown;
+            position: relative;
+            /* 左右不能同时写，同时写时right会被取消
+            上下同理 */
+            /* right: 100px; */
+            left: 100px;
+            /* 进行定位的元素层级比普通元素要高 */
+            top: 50px;
+        }
+        .box3 {
+            background-color: turquoise;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+    </div>
+</body>
+</html>

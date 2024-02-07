@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <!-- iframe可以嵌入很多内容 -->
+    <!-- 嵌入网页 -->
+    <!-- <iframe src="https://www.cn.bing.com" frameborder="0" width="800" height="400"></iframe> -->
+    <!-- <br> -->
+    <!-- <iframe src="https://www.taobao.com" frameborder="0" width="800" height="400"></iframe> -->
+
+    <!-- 嵌入图片 -->
+    <!-- <iframe width="1920" height="1080" src="./城堡.jpg" frameborder="0"></iframe> -->
+
+    <!-- 自动下载 -->
+    <!-- <iframe src="./交流充电桩.7z" frameborder="0"></iframe> -->
+
+    <!-- 与超链接的target属性一起使用 -->
+    <a href="https://cn.bing.com" target="container">看必应</a><br>
+    <a href="https://www.taobao.com" target="container">看淘宝</a><br>
+    <!-- 与表单的target属性一起使用 -->
+    <form action="https://so.toutiao.com/search" target="container" method="get">
+        <input type="text" name="keyword">
+        <input type="submit" value="搜新闻">
+    </form>
+
+    <iframe width="800" height="400" name="container" frameborder="0"></iframe>
+</body>
+
+</html>

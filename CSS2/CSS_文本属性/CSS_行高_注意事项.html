@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        /* 行高过小的问题，文字重叠，且最小值为0，再小将被判为非法，为normal,背景消失 */
+        #d1 {
+            font-size: 40px;
+            background-color: sienna;
+            line-height: 60px;
+        }
+
+        /* 注意点二，行高是可以继承的,对齐方式为基线对齐 */
+        #d2 {
+            font-size: 40px;
+            background-color: mediumseagreen;
+            line-height: 1.5;
+        }
+        span {
+            font-size: 100px;
+        }
+        /* 注意点三  line-height 与height
+            优先选height，无height是用line-height计算
+        */
+        #d3 {
+            font-size: 40px;
+            background-color: yellowgreen;
+            line-height: 1.5;
+            /* height: 100px; */
+        }
+        /* 作用，一，调整多行文字的间距
+                二 ，单行文字的垂直居中
+        */
+    </style>
+</head>
+<body>
+    <div id="d1">宇超电力股份有限公司位于美丽的太湖之滨</div>
+    <br>
+    <div id="d2">宇超电力股份有限公司<span>aaa</span>位于美丽的太湖之滨</div>
+
+    <div id="d3">宇超电力股份有限公司位于美丽的太湖之滨宇超电力股份有限公司位于美丽的太湖之滨宇超电力股份有限公司位于美丽的太湖之滨宇超电力股份有限公司位于美丽的太湖之滨</div>
+</body>
+</html>

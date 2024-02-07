@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>子代选择器</title>
+    <style>
+        div>a {
+            font-size: 50px;
+        }
+        div>p>span>a {
+            color: red;
+        }
+    </style>
+</head>
+    <body>
+    <div>
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+
+        <p>
+            <a href="#">4</a>
+           <span>
+            <a href="#">5</a>
+           </span>
+        </p>
+        
+    </div>
+    </body>
+</html>

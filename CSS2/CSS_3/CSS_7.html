@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>后代选择器</title>
+    <style>
+        ul span {
+            color: blue;
+
+        }
+         ul  ul li ul span.zhixia, 
+        ul ul li.zhixia
+        {
+            color: red;
+
+        }
+    </style>
+</head>
+    <body>
+        <div>
+            <ul>
+                <li class="zhixia">北京</li>
+                <li class="zhixia">上海</li>
+                <li>江苏<br>
+                    <ul>
+                        <li class="zhixia">南京</li>
+                        <li>
+                            <span>无锡</span>
+
+                        </li>
+                        <li>徐州
+                            <ul>
+                                <li>云龙区</li>
+                                <li>泉山区</li>
+                                <li>
+                                    <span class="zhixia">贾汪区</span>
+                                </li>
+                                <li >开发区</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>天津</li>
+            </ul>
+        </div>
+    </body>
+</html>

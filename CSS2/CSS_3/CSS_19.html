@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>选择器优先级</title>
+</head>
+    <style>
+        /* .container span.a {
+            color: red;
+        } */
+        div>p>span:nth-child(1)
+        {
+            color: green;
+        }
+
+    </style>
+<body>
+    <div class="container">
+        <p>
+            <span class="a">的广泛化工讲课风格和健康</span>
+            <span class="b">法国该回家看了看</span>
+        </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>伪元素选择器</title>
+    <style>
+        div::first-letter{
+            font-size: 40px;
+            color: red;
+        }
+        div::first-line{
+            background-color: aqua;
+        }
+        div::selection{
+            background-color: green;
+            color: yellow;
+        }
+        input::placeholder{
+            color: skyblue;
+        }
+
+        p::before{
+            content: "￥";
+        }
+    </style>
+</head>
+<body>
+    <div>sdfghjkl;gf hfgvhjjjjjhh hhhhhhhhhhh hhhhhhhhhhhhhhhh hhhhhhhhhhhhhhh hhhhhhhhhhhhhh hhhhhhhhhhhhh hhhhhhhhhh hhhhhhh hhhhh hhh hhhhhhhh hhhhh hhhhhh hhh hhh hhhhh hhhhh hhhh hh hhh hhhhhh hhhhh hhhh hhhj jk</div>
+    <input type="text" placeholder="请输入文字">
+    <p>299.00</p>
+    <p>299.00</p>
+    <p>299.00</p>
+    <p>299.00</p>
+</body>
+</html>

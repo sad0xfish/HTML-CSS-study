@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>结构伪类</title>
+    <style>
+        /* 选P中的倒数前3个 */
+         .first>p:nth-last-of-type(-n+3)
+        {
+            color: blue;
+        }
+        /* 整个兄弟表中倒数前4个不选 */
+        .two>p:nth-last-child(n+5)
+        {
+            color: red;
+        }
+
+        /* span:only-child {
+            color: yellowgreen;
+        } */
+
+        span:only-of-type {
+            color: skyblue;
+        }
+
+        :root{
+            background-color: snow;
+        }
+
+        div:empty.blue{
+            width: 250px;
+            height: 250px;
+            background-color: blue;
+        }
+
+        div:empty.red{
+            width: 250px;
+            height: 250px;
+            background-color: red;
+        }
+
+        div:empty.green{
+            width: 250px;
+            height: 250px;
+            background-color: green;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="first">
+            <span>001</span>
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+            <p>4</p>
+            <p>5</p>
+            <span>002</span>
+            <p>6</p>
+            <p>7</p>
+            <p>8</p>
+            <p>9</p>
+            <span>003</span>
+            <p>10</p>
+            <span>004</span>
+    </div>
+
+    <div class="two">
+        <span>001</span>
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+        <p>5</p>
+        <span>002</span>
+        <p>6</p>
+        <p>7</p>
+        <p>8</p>
+        <p>9</p>
+        <span>003</span>
+        <p>10</p>
+        <span>004</span>
+    </div>
+
+    <div>
+        <span>11111</span>
+        <p>
+            <span>111122</span>
+        </p>
+    </div>
+    <br>
+    <div class="red"></div>
+    <div class="blue"></div>
+    <div class="green"></div>
+</body>
+</html>

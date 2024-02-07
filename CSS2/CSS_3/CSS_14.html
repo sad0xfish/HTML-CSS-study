@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>否定伪类</title>
+    <style>
+        /* 选择能够满足两者的东西 */
+        div>p:not(.b)
+        {
+            color: aquamarine;
+        }
+
+        div>p:not([title*="s"]){
+            background-color: brown;
+        }
+
+        div>p:not(:first-child)
+        {
+            font-size: 40px;
+        }
+    </style>
+
+</head>
+
+    <body>
+        <div>
+            <P>1111</P>
+            <P>2222</P>
+            <P>3333</P>
+            <P class="b" title="someting">4444</P>
+            <P class="b" title="someting">5555</P>
+        </div>
+    </body>
+
+</html>
